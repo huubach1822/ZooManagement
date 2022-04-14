@@ -1,0 +1,107 @@
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\bin\Debug\ZooManagement.exe.config
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\bin\Debug\ZooManagement.exe
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\bin\Debug\ZooManagement.pdb
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.AssemblyReference.cache
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.SuggestedBindingRedirects.cache
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Form1.resources
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Properties.Resources.resources
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.GenerateResource.cache
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.CoreCompileInputs.cache
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.exe
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.pdb
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormUser.resources
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.LoginForm.resources
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormSpecies.resources
+D:\ZooManagement\ZooManagement\bin\Debug\ZooManagement.exe.config
+D:\ZooManagement\ZooManagement\bin\Debug\ZooManagement.exe
+D:\ZooManagement\ZooManagement\bin\Debug\ZooManagement.pdb
+D:\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.AssemblyReference.cache
+D:\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.SuggestedBindingRedirects.cache
+D:\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Form1.resources
+D:\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormSpecies.resources
+D:\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormUser.resources
+D:\ZooManagement\ZooManagement\obj\Debug\ZooManagement.LoginForm.resources
+D:\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Properties.Resources.resources
+D:\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.GenerateResource.cache
+D:\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.CoreCompileInputs.cache
+D:\ZooManagement\ZooManagement\obj\Debug\ZooManagement.exe
+D:\ZooManagement\ZooManagement\obj\Debug\ZooManagement.pdb
+D:\ZooManagement - Copy\ZooManagement\bin\Debug\ZooManagement.exe.config
+D:\ZooManagement - Copy\ZooManagement\bin\Debug\ZooManagement.exe
+D:\ZooManagement - Copy\ZooManagement\bin\Debug\ZooManagement.pdb
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.csproj.AssemblyReference.cache
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.csproj.SuggestedBindingRedirects.cache
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Form1.resources
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormSpecies.resources
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormUser.resources
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.LoginForm.resources
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Properties.Resources.resources
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.csproj.GenerateResource.cache
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.csproj.CoreCompileInputs.cache
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.exe
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.pdb
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormTOB.resources
+D:\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormOrigin.resources
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormOrigin.resources
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormTOB.resources
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\bin\Debug\EntityFramework.dll
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\bin\Debug\EntityFramework.SqlServer.dll
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\bin\Debug\EntityFramework.xml
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\bin\Debug\EntityFramework.SqlServer.xml
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormAnimals.resources
+F:\C#app\LapTrinh TrucQuan\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.CopyComplete
+D:\ZooManagement\ZooManagement\ZooManagement\bin\Debug\ZooManagement.exe.config
+D:\ZooManagement\ZooManagement\ZooManagement\bin\Debug\ZooManagement.exe
+D:\ZooManagement\ZooManagement\ZooManagement\bin\Debug\ZooManagement.pdb
+D:\ZooManagement\ZooManagement\ZooManagement\bin\Debug\EntityFramework.dll
+D:\ZooManagement\ZooManagement\ZooManagement\bin\Debug\EntityFramework.SqlServer.dll
+D:\ZooManagement\ZooManagement\ZooManagement\bin\Debug\EntityFramework.xml
+D:\ZooManagement\ZooManagement\ZooManagement\bin\Debug\EntityFramework.SqlServer.xml
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.AssemblyReference.cache
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.SuggestedBindingRedirects.cache
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Form1.resources
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormAnimals.resources
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormOrigin.resources
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormSpecies.resources
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormTOB.resources
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Forms.FormUser.resources
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.LoginForm.resources
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.Properties.Resources.resources
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.GenerateResource.cache
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.CoreCompileInputs.cache
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.csproj.CopyComplete
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.exe
+D:\ZooManagement\ZooManagement\ZooManagement\obj\Debug\ZooManagement.pdb
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\bin\Debug\ZooManagement.exe.config
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\bin\Debug\ZooManagement.exe
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\bin\Debug\ZooManagement.pdb
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\bin\Debug\EntityFramework.dll
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\bin\Debug\EntityFramework.SqlServer.dll
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\bin\Debug\EntityFramework.xml
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\bin\Debug\EntityFramework.SqlServer.xml
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.csproj.AssemblyReference.cache
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.csproj.SuggestedBindingRedirects.cache
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Form1.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormAnimals.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormOrigin.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormSpecies.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormTOB.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormUser.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.LoginForm.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Properties.Resources.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.csproj.GenerateResource.cache
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.csproj.CoreCompileInputs.cache
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.csproj.CopyComplete
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.exe
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.pdb
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormReason.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormFix.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormAccident.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormEvent.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormFood.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormFoodPrice.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormFoodForAnimal.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormArea.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormCondition.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormCage.resources
+D:\ZooManagement\ZooManagement - Copy\ZooManagement\obj\Debug\ZooManagement.Forms.FormAnimalCage.resources

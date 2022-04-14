@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ff6452544e6d459d83fb4ebcca78ef0e" Name="Diagram1">
+        <EntityTypeShape EntityType="ZooManagementModel.Accident" Width="1.5" PointX="6" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Animal" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Animal_Accident" Width="1.5" PointX="8.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Animal_Cage" Width="1.5" PointX="11.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Animal_Food" Width="1.5" PointX="8.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Area" Width="1.5" PointX="3.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Cage" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Condition" Width="1.5" PointX="3.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Countryside" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Employee" Width="1.5" PointX="3.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Fix" Width="1.5" PointX="6" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Food" Width="1.5" PointX="6" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Food_Price" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Origin" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Reason" Width="1.5" PointX="6" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.Species" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.sysdiagrams" Width="1.5" PointX="10.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooManagementModel.TypeOfBirth" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <AssociationConnector Association="ZooManagementModel.fk_AnimalAccident_AccidentID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_Animal_OriginID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_Animal_SpeciesID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_Animal_TypeOfBirthID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_AnimalAccident_AnimalID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_AnimalCage_AnimalID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_AnimalFood_AnimalID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_AnimalAccident_FixID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_AnimalAccident_ReasonID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_AnimalCage_CageID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_Animal_BreakfastID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_Animal_DinnerID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_Animal_LunchID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_Cage_AreaID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_Animal_EmployeeID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_Cage_ConditionID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_Cage_SpeciesID" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooManagementModel.fk_FoodPrice_FoodID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ZooManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Accident">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Accident_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Animal">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Vietnamese_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Species_ID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Red_list" Type="bit" />
+    <Property Name="Sciene_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="English_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="TypeOfBirth_ID" Type="int" />
+    <Property Name="Gender" Type="bit" />
+    <Property Name="Date_of_joint" Type="datetime" />
+    <Property Name="Origin_ID" Type="int" />
+    <Property Name="Feature" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date_of_birth" Type="datetime" />
+    <Property Name="Picture" Type="nvarchar" MaxLength="50" />
+    <Property Name="Age" Type="int" />
+  </EntityType>
+  <EntityType Name="Animal_Accident">
+    <Key>
+      <PropertyRef Name="Accident_ID" />
+      <PropertyRef Name="Animal_ID" />
+    </Key>
+    <Property Name="Accident_ID" Type="int" Nullable="false" />
+    <Property Name="Animal_ID" Type="int" Nullable="false" />
+    <Property Name="Start_day" Type="datetime" />
+    <Property Name="Reason_ID" Type="int" />
+    <Property Name="Fix_ID" Type="int" />
+    <Property Name="End_day" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Animal_Cage">
+    <Key>
+      <PropertyRef Name="Cage_ID" />
+      <PropertyRef Name="Species_ID" />
+    </Key>
+    <Property Name="Cage_ID" Type="int" Nullable="false" />
+    <Property Name="Species_ID" Type="int" Nullable="false" />
+    <Property Name="Day_in" Type="datetime" />
+    <Property Name="Reason_in" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Animal_Food">
+    <Key>
+      <PropertyRef Name="Animal_ID" />
+    </Key>
+    <Property Name="Animal_ID" Type="int" Nullable="false" />
+    <Property Name="Breakfast_ID" Type="int" />
+    <Property Name="Amount_of_breakfast" Type="int" />
+    <Property Name="Lunch_ID" Type="int" />
+    <Property Name="Amount_of_lunch" Type="int" />
+    <Property Name="Dinner_ID" Type="int" />
+    <Property Name="Amount_of_dinner" Type="int" />
+  </EntityType>
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Area_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Cage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Species_ID" Type="int" />
+    <Property Name="Area_ID" Type="int" />
+    <Property Name="Cage_area" Type="int" />
+    <Property Name="Height" Type="int" />
+    <Property Name="Capacity" Type="int" />
+    <Property Name="Condition_ID" Type="int" />
+    <Property Name="Employee_ID" Type="int" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Condition">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Condition_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Countryside">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Countryside_name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Employee_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Date_of_birth" Type="datetime" />
+    <Property Name="Gender" Type="bit" />
+    <Property Name="Employee_Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Fix">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fix_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Food">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Food_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Uses" Type="nvarchar" MaxLength="50" />
+    <Property Name="Unit" Type="int" />
+  </EntityType>
+  <EntityType Name="Food_Price">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Food_ID" Type="int" />
+    <Property Name="Price" Type="int" />
+    <Property Name="Applied_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Origin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Birth_type_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Reason">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Reason_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Species">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Species_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TypeOfBirth">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name_Birth" Type="nvarchar" MaxLength="50" />
+    <Property Name="Note" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="fk_Animal_BreakfastID">
+    <End Role="Food" Type="Self.Food" Multiplicity="0..1" />
+    <End Role="Animal_Food" Type="Self.Animal_Food" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Food">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal_Food">
+        <PropertyRef Name="Breakfast_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Animal_DinnerID">
+    <End Role="Food" Type="Self.Food" Multiplicity="0..1" />
+    <End Role="Animal_Food" Type="Self.Animal_Food" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Food">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal_Food">
+        <PropertyRef Name="Dinner_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Animal_EmployeeID">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Cage" Type="Self.Cage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cage">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Animal_LunchID">
+    <End Role="Food" Type="Self.Food" Multiplicity="0..1" />
+    <End Role="Animal_Food" Type="Self.Animal_Food" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Food">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal_Food">
+        <PropertyRef Name="Lunch_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Animal_OriginID">
+    <End Role="Origin" Type="Self.Origin" Multiplicity="0..1" />
+    <End Role="Animal" Type="Self.Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Origin">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="Origin_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Animal_SpeciesID">
+    <End Role="Species" Type="Self.Species" Multiplicity="0..1" />
+    <End Role="Animal" Type="Self.Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Species">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="Species_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Animal_TypeOfBirthID">
+    <End Role="TypeOfBirth" Type="Self.TypeOfBirth" Multiplicity="0..1" />
+    <End Role="Animal" Type="Self.Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeOfBirth">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="TypeOfBirth_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_AnimalAccident_AccidentID">
+    <End Role="Accident" Type="Self.Accident" Multiplicity="1" />
+    <End Role="Animal_Accident" Type="Self.Animal_Accident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accident">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal_Accident">
+        <PropertyRef Name="Accident_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_AnimalAccident_AnimalID">
+    <End Role="Animal" Type="Self.Animal" Multiplicity="1" />
+    <End Role="Animal_Accident" Type="Self.Animal_Accident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal_Accident">
+        <PropertyRef Name="Animal_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_AnimalAccident_FixID">
+    <End Role="Fix" Type="Self.Fix" Multiplicity="0..1" />
+    <End Role="Animal_Accident" Type="Self.Animal_Accident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fix">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal_Accident">
+        <PropertyRef Name="Fix_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_AnimalAccident_ReasonID">
+    <End Role="Reason" Type="Self.Reason" Multiplicity="0..1" />
+    <End Role="Animal_Accident" Type="Self.Animal_Accident" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reason">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal_Accident">
+        <PropertyRef Name="Reason_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_AnimalCage_CageID">
+    <End Role="Cage" Type="Self.Cage" Multiplicity="1" />
+    <End Role="Animal_Cage" Type="Self.Animal_Cage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cage">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal_Cage">
+        <PropertyRef Name="Cage_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_AnimalCage_SpeciesID">
+    <End Role="Species" Type="Self.Species" Multiplicity="1" />
+    <End Role="Animal_Cage" Type="Self.Animal_Cage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Species">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal_Cage">
+        <PropertyRef Name="Species_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_AnimalFood_AnimalID">
+    <End Role="Animal" Type="Self.Animal" Multiplicity="1" />
+    <End Role="Animal_Food" Type="Self.Animal_Food" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Animal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Animal_Food">
+        <PropertyRef Name="Animal_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Cage_AreaID">
+    <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+    <End Role="Cage" Type="Self.Cage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cage">
+        <PropertyRef Name="Area_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Cage_ConditionID">
+    <End Role="Condition" Type="Self.Condition" Multiplicity="0..1" />
+    <End Role="Cage" Type="Self.Cage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Condition">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cage">
+        <PropertyRef Name="Condition_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Cage_SpeciesID">
+    <End Role="Species" Type="Self.Species" Multiplicity="0..1" />
+    <End Role="Cage" Type="Self.Cage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Species">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cage">
+        <PropertyRef Name="Species_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_FoodPrice_FoodID">
+    <End Role="Food" Type="Self.Food" Multiplicity="0..1" />
+    <End Role="Food_Price" Type="Self.Food_Price" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Food">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Food_Price">
+        <PropertyRef Name="Food_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ZooManagementModelStoreContainer">
+    <EntitySet Name="Accident" EntityType="Self.Accident" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Animal" EntityType="Self.Animal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Animal_Accident" EntityType="Self.Animal_Accident" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Animal_Cage" EntityType="Self.Animal_Cage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Animal_Food" EntityType="Self.Animal_Food" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cage" EntityType="Self.Cage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Condition" EntityType="Self.Condition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Countryside" EntityType="Self.Countryside" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fix" EntityType="Self.Fix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Food" EntityType="Self.Food" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Food_Price" EntityType="Self.Food_Price" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Origin" EntityType="Self.Origin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reason" EntityType="Self.Reason" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Species" EntityType="Self.Species" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TypeOfBirth" EntityType="Self.TypeOfBirth" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_Animal_BreakfastID" Association="Self.fk_Animal_BreakfastID">
+      <End Role="Food" EntitySet="Food" />
+      <End Role="Animal_Food" EntitySet="Animal_Food" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Animal_DinnerID" Association="Self.fk_Animal_DinnerID">
+      <End Role="Food" EntitySet="Food" />
+      <End Role="Animal_Food" EntitySet="Animal_Food" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Animal_EmployeeID" Association="Self.fk_Animal_EmployeeID">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Cage" EntitySet="Cage" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Animal_LunchID" Association="Self.fk_Animal_LunchID">
+      <End Role="Food" EntitySet="Food" />
+      <End Role="Animal_Food" EntitySet="Animal_Food" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Animal_OriginID" Association="Self.fk_Animal_OriginID">
+      <End Role="Origin" EntitySet="Origin" />
+      <End Role="Animal" EntitySet="Animal" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Animal_SpeciesID" Association="Self.fk_Animal_SpeciesID">
+      <End Role="Species" EntitySet="Species" />
+      <End Role="Animal" EntitySet="Animal" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Animal_TypeOfBirthID" Association="Self.fk_Animal_TypeOfBirthID">
+      <End Role="TypeOfBirth" EntitySet="TypeOfBirth" />
+      <End Role="Animal" EntitySet="Animal" />
+    </AssociationSet>
+    <AssociationSet Name="fk_AnimalAccident_AccidentID" Association="Self.fk_AnimalAccident_AccidentID">
+      <End Role="Accident" EntitySet="Accident" />
+      <End Role="Animal_Accident" EntitySet="Animal_Accident" />
+    </AssociationSet>
+    <AssociationSet Name="fk_AnimalAccident_AnimalID" Association="Self.fk_AnimalAccident_AnimalID">
+      <End Role="Animal" EntitySet="Animal" />
+      <End Role="Animal_Accident" EntitySet="Animal_Accident" />
+    </AssociationSet>
+    <AssociationSet Name="fk_AnimalAccident_FixID" Association="Self.fk_AnimalAccident_FixID">
+      <End Role="Fix" EntitySet="Fix" />
+      <End Role="Animal_Accident" EntitySet="Animal_Accident" />
+    </AssociationSet>
+    <AssociationSet Name="fk_AnimalAccident_ReasonID" Association="Self.fk_AnimalAccident_ReasonID">
+      <End Role="Reason" EntitySet="Reason" />
+      <End Role="Animal_Accident" EntitySet="Animal_Accident" />
+    </AssociationSet>
+    <AssociationSet Name="fk_AnimalCage_CageID" Association="Self.fk_AnimalCage_CageID">
+      <End Role="Cage" EntitySet="Cage" />
+      <End Role="Animal_Cage" EntitySet="Animal_Cage" />
+    </AssociationSet>
+    <AssociationSet Name="fk_AnimalCage_SpeciesID" Association="Self.fk_AnimalCage_SpeciesID">
+      <End Role="Species" EntitySet="Species" />
+      <End Role="Animal_Cage" EntitySet="Animal_Cage" />
+    </AssociationSet>
+    <AssociationSet Name="fk_AnimalFood_AnimalID" Association="Self.fk_AnimalFood_AnimalID">
+      <End Role="Animal" EntitySet="Animal" />
+      <End Role="Animal_Food" EntitySet="Animal_Food" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Cage_AreaID" Association="Self.fk_Cage_AreaID">
+      <End Role="Area" EntitySet="Area" />
+      <End Role="Cage" EntitySet="Cage" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Cage_ConditionID" Association="Self.fk_Cage_ConditionID">
+      <End Role="Condition" EntitySet="Condition" />
+      <End Role="Cage" EntitySet="Cage" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Cage_SpeciesID" Association="Self.fk_Cage_SpeciesID">
+      <End Role="Species" EntitySet="Species" />
+      <End Role="Cage" EntitySet="Cage" />
+    </AssociationSet>
+    <AssociationSet Name="fk_FoodPrice_FoodID" Association="Self.fk_FoodPrice_FoodID">
+      <End Role="Food" EntitySet="Food" />
+      <End Role="Food_Price" EntitySet="Food_Price" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

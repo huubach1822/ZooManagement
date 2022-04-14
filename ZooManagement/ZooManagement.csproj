@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E6E638A-9175-48F3-94D7-264518E1F805}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZooManagement</RootNamespace>
+    <AssemblyName>ZooManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accident.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Animal.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Animal_Accident.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Animal_Cage.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Animal_Food.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Area.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cage.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Condition.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Countryside.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fix.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Food.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Food_Price.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAccident.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAccident.Designer.cs">
+      <DependentUpon>FormAccident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAnimalCage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAnimalCage.Designer.cs">
+      <DependentUpon>FormAnimalCage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAnimals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAnimals.Designer.cs">
+      <DependentUpon>FormAnimals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormArea.Designer.cs">
+      <DependentUpon>FormArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCage.Designer.cs">
+      <DependentUpon>FormCage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCondition.Designer.cs">
+      <DependentUpon>FormCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEvent.Designer.cs">
+      <DependentUpon>FormEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFix.Designer.cs">
+      <DependentUpon>FormFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFood.Designer.cs">
+      <DependentUpon>FormFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFoodForAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFoodForAnimal.Designer.cs">
+      <DependentUpon>FormFoodForAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFoodPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFoodPrice.Designer.cs">
+      <DependentUpon>FormFoodPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormOrigin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormOrigin.Designer.cs">
+      <DependentUpon>FormOrigin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReason.Designer.cs">
+      <DependentUpon>FormReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSpecies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSpecies.Designer.cs">
+      <DependentUpon>FormSpecies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTOB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTOB.Designer.cs">
+      <DependentUpon>FormTOB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Origin.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reason.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Species.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ThemeColor.cs" />
+    <Compile Include="TypeOfBirth.cs">
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ZooManagementModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZooManagementModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ZooManagementModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZooManagementModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ZooManagementModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZooManagementModel.edmx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAccident.resx">
+      <DependentUpon>FormAccident.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAnimalCage.resx">
+      <DependentUpon>FormAnimalCage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAnimals.resx">
+      <DependentUpon>FormAnimals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormArea.resx">
+      <DependentUpon>FormArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCage.resx">
+      <DependentUpon>FormCage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCondition.resx">
+      <DependentUpon>FormCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEvent.resx">
+      <DependentUpon>FormEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFix.resx">
+      <DependentUpon>FormFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFood.resx">
+      <DependentUpon>FormFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFoodForAnimal.resx">
+      <DependentUpon>FormFoodForAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFoodPrice.resx">
+      <DependentUpon>FormFoodPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormOrigin.resx">
+      <DependentUpon>FormOrigin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormReason.resx">
+      <DependentUpon>FormReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSpecies.resx">
+      <DependentUpon>FormSpecies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTOB.resx">
+      <DependentUpon>FormTOB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="ZooManagementModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ZooManagementModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ZooManagementModel.edmx.diagram">
+      <DependentUpon>ZooManagementModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man %282%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pet-food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pet-cage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location-pointer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoo %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoo %282%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.jfif" />
+    <None Include="Resources\images.jfif" />
+    <None Include="Resources\kevin-laminto-7PqRZK6rbaE-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ZooManagementModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ZooManagementModel.edmx</DependentUpon>
+      <LastGenOutput>ZooManagementModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ZooManagementModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ZooManagementModel.edmx</DependentUpon>
+      <LastGenOutput>ZooManagementModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
